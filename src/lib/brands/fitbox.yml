@@ -1,8 +1,8 @@
 name: fitbox
 label: FITBOX
 title: FITBOX アンケートキャンペーン
-heroTitle: アンケートへのご回答でもれなく選べるギフト券プレゼント！
-heroContent: この度はFITBOX製品をご購入頂きありがとうございます。下記フォームよりご応募いただいた方にもれなく、お好きなギフト券1000円分(Amazonギフト券、QUOカードの中からご選択下さい)をプレゼントいたします
+heroTitle: アンケートへのご回答で1年の保証期間延長
+heroContent: この度はFITBOX製品をご購入頂きありがとうございます。下記フォームよりご応募いただいた方にもれなく、保証期間を1年間延長致します。
 gifts:
   - type: amazon_giftcard
     amount: 1000
