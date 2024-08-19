@@ -1,0 +1,268 @@
+name: fitbox
+label: FITBOX
+title: FITBOX アンケートキャンペーン
+heroTitle: アンケートへのご回答でもれなく選べるギフト券プレゼント！
+heroContent: この度はFITBOX製品をご購入頂きありがとうございます。下記フォームよりご応募いただいた方にもれなく、お好きなギフト券1000円分(Amazonギフト券、QUOカードの中からご選択下さい)をプレゼントいたします
+gifts:
+  - type: amazon_giftcard
+    amount: 1000
+shops:
+  - id: amazon
+    label: Amazon
+    url: https://www.amazon.co.jp/gp/css/order-history
+    masks: 
+      - "###-#######-#######"
+  - id: rakuten
+    label: 楽天
+    url: https://order.my.rakuten.co.jp/
+    masks:
+      - "######-########-#######"
+      - "######-########-########"
+      - "######-########-#########"
+      - "######-########-##########"
+    reviewUrl: https://order.my.rakuten.co.jp/
+  - id: yahoo
+    label: Yahooショッピング
+  - id: ainext
+    label: AINEXT公式オンラインストア
+    url: https://ainext.jp/mypage
+  - id: fitbox_online
+    label: FITBOXオンラインストア ※FIT_から始まる注文番号
+  - id: miston
+    label: MISTONストア
+    url: https://miston.shop/mypage/login.php
+  - id: fitbox
+    label: FITBOX公式オンラインストア
+  - id: COSTCO
+    label: COSTCO (注文番号は 1111 とご入力下さい)
+  - id: 東急ハンズ
+    label: 東急ハンズ (注文番号は1111とご入力ください)
+  - id: イオン
+    label: イオン (注文番号は1111とご入力ください)
+  - id: GYM CLOUD
+    label: GYM CLOUD (注文番号は1111とご入力ください)
+  - id: EDION
+    label: EDION (注文番号は1111とご入力ください)
+  - id: SPORTSAUTHORITY
+    label: Sports Authority (注文番号は1111とご入力ください)
+questions:
+  - title: 性別をご回答ください
+    type: radio
+    options:
+      - label: 男性
+        value: 男
+      - label: 女性
+        value: 女
+  - title: 年齢をご回答ください
+    type: select
+    placeholder: 年齢を選択してください
+    options:
+      - text: "20歳以下"
+        value: "20歳以下"
+      - text: "21-25歳"
+        value: "21-25歳"
+      - text: "26-30歳"
+        value: "26-30歳"
+      - text: "31-35歳"
+        value: "31-35歳"
+      - text: "36-40歳"
+        value: "36-40歳"
+      - text: "41-45歳"
+        value: "41-45歳"
+      - text: "46-50歳"
+        value: "46-50歳"
+      - text: "51-55歳"
+        value: "51-55歳"
+      - text: "56-60歳"
+        value: "56-60歳"
+      - text: "60歳以上"
+        value: "60歳以上"
+  - title: 利用目的をご回答ください。
+    type: select
+    placeholder: 利用目的をご回答ください。
+    options:
+      - text: "ストレス解消"
+        value: "ストレス解消"
+      - text: "健康維持"
+        value: "健康維持"
+      - text: "ダイエット"
+        value: "ダイエット"
+      - text: "筋肥大・競技パフォーマンス向上"
+        value: "筋肥大・競技パフォーマンス向上"
+      - text: "その他"
+        value: "その他"
+  - title: 最初に本商品を見つけた媒体を教えて下さい
+    type: select
+    placeholder: 最初に本商品を見つけた媒体を教えて下さい
+    options:
+      - text: "Amazon"
+        value: "Amazon"
+      - text: "楽天"
+        value: "楽天"
+      - text: "Google"
+        value: "Google"
+      - text: "ヤフー"
+        value: "ヤフー"
+      - text: "Facebook"
+        value: "Facebook"
+      - text: "Youtube"
+        value: "Youtube"
+      - text: "instagram"
+        value: "instagram"
+      - text: "店舗(ホームセンター等)"
+        value: "店舗(ホームセンター等)"
+      - text: "その他"
+        value: "その他"
+  - title: 本商品を検索したときのキーワードをご回答ください。
+    type: select
+    placeholder: 本商品を検索したときのキーワードをご回答ください。
+    options:
+      - text: "FITBOX"
+        value: "FITBOX"
+      - text: "ウォーキングマシン"
+        value: "ウォーキングマシン"
+      - text: "ルームランナー"
+        value: "ルームランナー"
+      - text: "トレッドミル"
+        value: "トレッドミル"
+      - text: "その他"
+        value: "その他"
+  - title: ウォーキングマシンを選ぶ基準（重要視する指標）は何ですか。
+    type: select
+    placeholder: ウォーキングマシンを選ぶ基準（重要視する指標）は何ですか。
+    options:
+      - text: "外観"
+        value: "外観"
+      - text: "静音性"
+        value: "静音性"
+      - text: "収納性"
+        value: "収納性"
+      - text: "最大速度"
+        value: "最大速度"
+      - text: "移動簡易性"
+        value: "移動簡易性"
+      - text: "軽量"
+        value: "軽量"
+      - text: "連続稼働時間（耐久性）"
+        value: "連続稼働時間（耐久性）"
+  - title: 本商品を購入された時にお使いのデバイスを教えてください。
+    type: select
+    placeholder: 本商品を購入された時にお使いのデバイスを教えてください。
+    options:
+      - text: "スマートフォン"
+        value: "スマートフォン"
+      - text: "PC"
+        value: "PC"
+      - text: "タブレット"
+        value: "タブレット"
+      - text: "その他"
+        value: "その他"
+  - title: 他に迷った商品があれば教えてください
+    type: text
+    placeholder: 他に迷った商品があれば入力してください
+  - title: 購入の決め手を教えてください(FITBOXのどこに魅力を感じましたか。)
+    type: text
+    placeholder: 購入の決め手を入力してください
+  - title: 本商品を他の人に勧めるとしたら何と言って勧めますか？
+    type: text
+    placeholder: 本商品を他の人に勧めるとしたら何と言って勧めますか？
+  - title: １回のエクササイズで本製品を何分間ご使用されますか？
+    type: radio
+    options:
+      - label: 15分以内
+        value: 15分以内
+      - label: 15～30分
+        value: 15～30分
+      - label: 30分～60分
+        value: 30分～60分
+      - label: 60分～90分
+        value: 60分～90分
+      - label: 90分以上使用したい
+        value: 90分以上使用したい
+  - title: FITBOXをお使いの住居形態を教えてください。
+    type: radio
+    options:
+      - label: 一戸建て
+        value: 一戸建て
+      - label: マンション
+        value: マンション
+      - label: アパート
+        value: アパート
+      - label: その他
+        value: その他
+  - title: ウォーキングマシンをご購入のお客様に向けてのご質問です。ご使用の速度を教えてください。
+    type: radio
+    options:
+      - label: 3km/h以下
+        value: 3km/h以下
+      - label: 3~6km/h
+        value: 3~6km/h
+      - label: 6~9km/h
+        value: 6~9km/h
+      - label: 10km/h
+        value: 10km/h
+  - title: お住いの住居㎡を教えてください。
+    type: select
+    placeholder: お住いの住居㎡を教えてください。
+    options:
+      - text: "～15㎡"
+        value: "～15㎡"
+      - text: "16～20㎡"
+        value: "16～20㎡"
+      - text: "21～25㎡"
+        value: "21～25㎡"
+      - text: "26～30㎡"
+        value: "26～30㎡"
+      - text: "31～35㎡"
+        value: "31～35㎡"
+      - text: "36～40㎡"
+        value: "36～40㎡"
+      - text: "41㎡～50㎡"
+        value: "41㎡～50㎡"
+      - text: "51～60㎡"
+        value: "51～60㎡"
+      - text: "61～70㎡"
+        value: "61～70㎡"
+      - text: "71㎡～"
+        value: "71㎡～"
+  - title: FITBOXの設置場所を教えてください。他社のウォーキングマシンをお使いの方は無を選択してください。
+    type: select
+    placeholder: FITBOXの設置場所を教えてください。他社のウォーキングマシンをお使いの方は無を選択してください。
+    options:
+      - text: "リビング"
+        value: "リビング"
+      - text: "ダイニング"
+        value: "ダイニング"
+      - text: "玄関"
+        value: "玄関"
+      - text: "寝室"
+        value: "寝室"
+      - text: "その他の部屋"
+        value: "その他の部屋"
+      - text: "その他"
+        value: "その他"
+  - title: FITBOXを設置している部屋の広さを教えてください。
+    type: select
+    placeholder: FITBOXを設置している部屋の広さを教えてください。
+    options:
+      - text: "～6畳"
+        value: "～6畳"
+      - text: "7～9畳"
+        value: "7～9畳"
+      - text: "10～13畳"
+        value: "10～13畳"
+      - text: "14～17畳"
+        value: "14～17畳"
+      - text: "18～20畳"
+        value: "18～20畳"
+      - text: "21畳～"
+        value: "21畳～"
+lineAddFriendUrl: https://line.me/R/ti/p/%40618pmciv
+emailAddress: support@fitbox.co.jp
+color:
+  headerBackground: "#101733"
+  headerTitle: "#fff"
+  heroBackground: "#efebe9"
+  heroTitle: "#917e3f"
+  heroContent: "#666"
+  brand: "#ad9858"
