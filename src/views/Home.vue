@@ -11,9 +11,7 @@
         </div>
         <template v-if="!hideGiftSelect">
           <template v-if="isSingleGift">
-            <div class="mx-auto pt-4" style="max-width:220px;">
-              <gift-card :type="gifts[0].type" :amount="gifts[0].amount" :bg-color="brand.color.giftCardBackground"></gift-card>
-            </div>
+           
           </template>
           <template v-else>
             <div class="mx-auto pt-4" style="max-width:800px;">
